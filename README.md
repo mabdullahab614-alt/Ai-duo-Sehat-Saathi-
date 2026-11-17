@@ -9,7 +9,7 @@
 
 <!-- Animated typing subtitle -->
 <a href="https://YOUR_LIVE_DEMO_URL">
-<img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=18&pause=800&color=34D399&center=true&vCenter=true&width=760&lines=%F0%9F%93%B7+Upload+a+Prescription+or+Lab+Report;%F0%9F%A4%96+Live+OCR+%2B+LLM+Document+Understanding;%F0%9F%97%A3%EF%B8%8F+Explained+in+Urdu%2C+Roman+Urdu+%26+Voice;%F0%9F%92%8A+Auto-Built+Daily+Medicine+Schedule;%F0%9F%9A%A8+Red-Flag+Emergency+Safety+Layer;%F0%9F%91%A8%E2%80%8D%F0%9F%91%A9%E2%80%8D%F0%9F%91%A7+Caregiver+Mode+for+Families;%F0%9F%8C%8D+Built+for+SDG+3%3A+Good+Health+and+Well-Being" alt="Features"/>
+<img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=18&pause=800&color=34D399&center=true&vCenter=true&width=760&lines=%F0%9F%93%B7+Upload+a+Prescription+or+Lab+Report;%F0%9F%A4%96+Gemini+Vision+OCR+%2B+Structured+Extraction;%F0%9F%97%A3%EF%B8%8F+Explained+in+Urdu%2C+Roman+Urdu+%26+Voice;%F0%9F%92%8A+Auto-Built+Daily+Medicine+Schedule;%F0%9F%9A%A8+Deterministic+Emergency+Safety+Engine;%F0%9F%91%A8%E2%80%8D%F0%9F%91%A9%E2%80%8D%F0%9F%91%A7+Family+Health+Tree+%26+Ammi+Mode;%F0%9F%8C%8D+Built+for+SDG+3%3A+Good+Health+and+Well-Being" alt="Features"/>
 </a>
 
 <br/><br/>
@@ -22,13 +22,13 @@
 <br/><br/>
 
 <!-- Badges row 1 -->
-<img src="https://img.shields.io/badge/UN%20SDG-3%20Good%20Health-4C9F38?style=for-the-badge&labelColor=0f172a"/>
+<a href="https://YOUR_LIVE_DEMO_URL"><img src="https://img.shields.io/badge/UN%20SDG-3%20Good%20Health-4C9F38?style=for-the-badge&labelColor=0f172a"/></a>
 &nbsp;
-<img src="https://img.shields.io/badge/Urdu-First-10B981?style=for-the-badge&labelColor=0f172a"/>
+<a href="https://YOUR_LIVE_DEMO_URL"><img src="https://img.shields.io/badge/Urdu-First-10B981?style=for-the-badge&labelColor=0f172a"/></a>
 &nbsp;
-<img src="https://img.shields.io/badge/Voice-First-06B6D4?style=for-the-badge&labelColor=0f172a"/>
+<a href="https://YOUR_LIVE_DEMO_URL"><img src="https://img.shields.io/badge/Voice-First-06B6D4?style=for-the-badge&labelColor=0f172a"/></a>
 &nbsp;
-<img src="https://img.shields.io/badge/AI-OCR%20%2B%20LLM-8B5CF6?style=for-the-badge&labelColor=0f172a"/>
+<a href="https://YOUR_LIVE_DEMO_URL"><img src="https://img.shields.io/badge/AI-Gemini%20%2B%20Zod-8B5CF6?style=for-the-badge&labelColor=0f172a"/></a>
 
 <br/><br/>
 
@@ -37,7 +37,14 @@
 &nbsp;
 <img src="https://img.shields.io/badge/Data-Synthetic%20Only-3B82F6?style=for-the-badge&labelColor=0f172a"/>
 &nbsp;
-<img src="https://img.shields.io/badge/Hackathon-STCS%20AI%20Hackathon%202026-EC4899?style=for-the-badge&labelColor=0f172a"/>
+<img src="https://img.shields.io/badge/Next.js-App%20Router-000000?style=for-the-badge&logo=nextdotjs&labelColor=0f172a"/>
+&nbsp;
+<a href="#-license"><img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-DC2626?style=for-the-badge&labelColor=0f172a"/></a>
+
+<br/><br/>
+
+<!-- Hackathon badge -->
+<img src="https://img.shields.io/badge/STCS%20AI%20Hackathon%202026-Minhaj%20University%20Lahore-EC4899?style=for-the-badge&labelColor=0f172a"/>
 
 </div>
 
@@ -47,24 +54,24 @@
 
 ## 🎯 The Problem
 
-> **Low-literacy and Urdu-speaking patients cannot reliably understand medical instructions, prescriptions, and lab reports, leading to unsafe medication behavior, delayed care, and poor health outcomes.**
+> **Low-literacy and Urdu-speaking patients cannot reliably understand prescriptions, lab reports, and medical instructions, which leads to medication errors, delayed care, and poor health outcomes.**
 
-In Pakistan, a prescription is easy to receive but hard to understand. It is often written in English, in medical terms, or in difficult handwriting. Patients and caregivers are left asking:
+Prescriptions and lab reports are usually written in English, in clinical jargon, or in dense formatting. Patients and caregivers are left asking:
 
 | ❓ Question nobody answers | 😟 What happens |
 |---|---|
 | *"Which medicine is for what?"* | Wrong medicine at the wrong time |
-| *"How much and when should I take it?"* | Missed or doubled doses |
+| *"How much, and before or after meals?"* | Missed or doubled doses |
 | *"Is this lab value normal?"* | Anxiety, or ignored warning signs |
-| *"What symptoms mean I need help now?"* | Delayed emergency care |
+| *"Which symptoms mean I need help now?"* | Delayed emergency care |
 | *"Where can I go for affordable care?"* | Dependence on informal advice |
 
 ## 💡 The Solution
 
-**Sehat Saathi** ("Health Companion") turns a photo of a prescription or lab report into something a patient can **read, hear, and act on**, in their own language.
+**Sehat Saathi** (`صحت ساتھی`, "Health Companion") turns a photo of a prescription or lab report into something a patient can **read, hear, and act on**, in their own language.
 
 ```
- 📷 Upload  ──►  🔍 OCR  ──►  🧠 LLM Understanding  ──►  🛡️ Safety Check  ──►  🗣️ Urdu + Voice  ──►  💊 Schedule
+ 📷 Upload ──► 🔍 OCR ──► 🛡️ Safety Check ──► 🧠 Structured Extraction ──► ✅ Confirm ──► 🗣️ Urdu + Voice ──► 💊 Schedule
 ```
 
 > ⚠️ Sehat Saathi **does not diagnose**, prescribe, or replace a doctor. It helps people *understand* what their clinician already told them.
@@ -82,48 +89,51 @@ In Pakistan, a prescription is easy to receive but hard to understand. It is oft
 ║                    SEHAT SAATHI AI PIPELINE                      ║
 ╠══════════════════════════════════════════════════════════════════╣
 ║                                                                  ║
-║   INPUT: Prescription / Lab Report (JPG, PNG, PDF, or text)      ║
-║      │                                                           ║
-║      ▼                                                           ║
-║   ┌─────────────────────────┐                                    ║
-║   │  Image Preprocessing    │ ──► deskew, contrast, denoise      ║
-║   └─────────────────────────┘                                    ║
-║      │                                                           ║
-║      ▼                                                           ║
-║   ┌─────────────────────────┐                                    ║
-║   │  OCR Extraction         │ ──► raw text + confidence          ║
-║   │  (user can correct)     │     low confidence → ask user      ║
-║   └─────────────────────────┘                                    ║
+║   INPUT: Prescription / Lab Report (JPG, PNG, WebP, PDF, text)   ║
 ║      │                                                           ║
 ║      ▼                                                           ║
 ║   ┌─────────────────────────────────────────┐                    ║
-║   │      LLM STRUCTURED EXTRACTION          │                    ║
-║   │   • Medicines, dose, frequency, days    │                    ║
-║   │   • Lab values + reference ranges       │                    ║
-║   │   • Missing / ambiguous fields          │                    ║
-║   │   • Questions to ask your doctor        │                    ║
+║   │  Client-side resize + compression       │                    ║
+║   │  + instant red-flag check               │                    ║
 ║   └─────────────────────────────────────────┘                    ║
 ║      │                                                           ║
 ║      ▼                                                           ║
 ║   ┌─────────────────────────────────────────┐                    ║
-║   │      🛡️ SAFETY RULE ENGINE              │                    ║
-║   │   Rule-based layer OVERRIDES the LLM    │                    ║
-║   │   chest pain · breathing · fainting ·   │                    ║
-║   │   allergic reaction · bleeding ·        │                    ║
-║   │   self-harm · stroke signs              │                    ║
-║   │   ──► instant EMERGENCY screen          │                    ║
+║   │  OCR  (/lib/ai/ocr.ts)                  │                    ║
+║   │  Primary : Gemini Vision                │                    ║
+║   │  Fallback: Tesseract.js                 │                    ║
 ║   └─────────────────────────────────────────┘                    ║
 ║      │                                                           ║
 ║      ▼                                                           ║
 ║   ┌─────────────────────────────────────────┐                    ║
-║   │   PLAIN-LANGUAGE GENERATION             │                    ║
-║   │   Urdu script · Roman Urdu · English    │                    ║
+║   │  🛡️ SAFETY RULE ENGINE                  │                    ║
+║   │  (/lib/safety/redFlags.ts)              │                    ║
+║   │  Deterministic. Runs BEFORE and         │                    ║
+║   │  independently of the AI.               │                    ║
+║   │  Red flag ──► instant /emergency screen │                    ║
+║   └─────────────────────────────────────────┘                    ║
+║      │ clear                                                     ║
+║      ▼                                                           ║
+║   ┌─────────────────────────────────────────┐                    ║
+║   │  GEMINI STRUCTURED EXTRACTION           │                    ║
+║   │  (/lib/ai/gemini.ts + prompts.ts)       │                    ║
+║   │  • JSON responseSchema                  │                    ║
+║   │  • Zod runtime validation (retry once)  │                    ║
+║   │  • Medicines, dose, frequency, duration │                    ║
+║   │  • Lab values + reference ranges        │                    ║
+║   │  • Missing / ambiguous fields flagged   │                    ║
 ║   └─────────────────────────────────────────┘                    ║
 ║      │                                                           ║
 ║      ▼                                                           ║
-║   OUTPUT: 🗣️ Voice  +  💊 Schedule  +  🏥 Care Navigation        ║
+║   ┌─────────────────────────────────────────┐                    ║
+║   │  ✅ USER CONFIRMATION  (/review)        │                    ║
+║   │  Low confidence ──► user must confirm   │                    ║
+║   └─────────────────────────────────────────┘                    ║
+║      │                                                           ║
+║      ▼                                                           ║
+║   OUTPUT: Urdu · Roman Urdu · English  +  🗣️ Voice               ║
+║           💊 Schedule  +  👨‍👩‍👧 Family  +  🏥 Care Navigation       ║
 ║                                                                  ║
-║   ⚡ Modular: OCR, LLM and Safety layers swap independently      ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 
@@ -140,38 +150,68 @@ In Pakistan, a prescription is easy to receive but hard to understand. It is oft
 <td width="50%">
 
 ### 🧠 Intelligence
-- ✅ **Live OCR** on prescriptions and lab reports
-- ✅ **LLM structured extraction** (medicine, dose, timing, duration)
-- ✅ **Lab value explanation**: Normal / Needs attention / Discuss with doctor
-- ✅ **Low-confidence detection**: asks the user to confirm unclear text
-- ✅ **"Questions to ask your doctor"** checklist
+- ✅ **Upload JPG, PNG, WebP, PDF** or paste typed text
+- ✅ **Gemini Vision OCR** with **Tesseract.js fallback**
+- ✅ **Structured extraction**: medicines, strengths, doses, frequency, duration, food instructions
+- ✅ **Lab values + reference ranges** with conservative status: `Normal` · `Needs Attention` · `Discuss with Doctor` · `Unknown`
+- ✅ **JSON Schema + Zod** validation, retry once on failure
+- ✅ **Low-confidence fields** require explicit user confirmation
 - ✅ **Never invents** medicines, doses or ranges
 
 ### 🛡️ Safety
-- ✅ **Rule-based red-flag engine** that overrides the LLM
+- ✅ **Deterministic red-flag engine**, independent of AI
+- ✅ Detects chest pain, severe breathing difficulty, fainting, severe allergic reaction, uncontrolled bleeding, self-harm thoughts, stroke signs
 - ✅ **Instant emergency screen**, never blocked by AI latency
+- ✅ **`Shift+E`** or **`1122`** from any screen
 - ✅ **No diagnosis**, ever
-- ✅ **Disclaimers** on every clinical output
 
 </td>
 <td width="50%">
 
 ### 🗣️ Accessibility
 - ✅ **Urdu script + Roman Urdu + English**
-- ✅ **Voice playback** (play, pause, replay)
-- ✅ **Large text**, high contrast, icon-driven UI
-- ✅ **One action per screen** for first-time digital users
-- ✅ **Adjustable font size**
+- ✅ **Voice playback** (play, pause, replay, speed control)
+- ✅ **Large text mode** (`A+`) and **high-contrast mode**
+- ✅ **Keyboard navigation**, large touch targets
+- ✅ **Ammi Mode**: one medicine per card, giant fonts, pictograms
 
 ### 👨‍👩‍👧 Care
-- ✅ **Auto-built daily medicine schedule** (morning / afternoon / night / with food)
-- ✅ **Care navigation**: clinics, pharmacies, telehealth
-- ✅ **Caregiver mode**: shared summary, reminders, missed-dose flags
-- ✅ **Privacy by design**: minimal data, consent, delete anytime
+- ✅ **Visual daily schedule**: Morning / Afternoon / Night / As Needed, with-food indicators, dose checkboxes
+- ✅ **Mera Khandaan**: family health tree, up to 3 generations and 8 members
+- ✅ **Caregiver mode** with consent-based sharing and one-tap local deletion
+- ✅ **Lahore care navigation** (demo dataset): clinics, hospitals, pharmacies, telehealth
+- ✅ **Privacy by design**: no server-side patient database
 
 </td>
 </tr>
 </table>
+
+### 🧪 Verification Lab
+
+| Feature | Route | What it does |
+|---|---|---|
+| 🔎 **AI Ka Yaqeen** | `/review` | Side-by-side view of the original image and extracted fields, with amber highlights on unverified fields |
+| 🧠 **Samajh Gaye?** | `/api/teach-back` | Teach-back comprehension check |
+| 💬 **Dawa Se Poochho** | `/api/ask-medicine` | Q&A about a specific medicine |
+| 💊 **Dawa-Match Check** | `/api/medicine-match` | Compare a medicine strip against the extracted prescription |
+| 📊 **Live Accuracy Scorecard** | `/eval`, `/api/eval` | Accuracy across 5 synthetic prescriptions |
+| 🏆 **Judge, Aap Koshish Karein** | `/api/safety-challenge` | Interactive safety challenge for judges |
+
+---
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
+
+## 📸 Screenshots
+
+> 📝 *Add 3 to 4 real screenshots or a short demo GIF here before submission. Example layout:*
+
+<div align="center">
+
+| Upload & Review | Urdu Explanation | Ammi Mode | Emergency Screen |
+|:---:|:---:|:---:|:---:|
+| `docs/shot-review.png` | `docs/shot-explain.png` | `docs/shot-ammi.png` | `docs/shot-emergency.png` |
+
+</div>
 
 ---
 
@@ -179,11 +219,11 @@ In Pakistan, a prescription is easy to receive but hard to understand. It is oft
 
 | User | Need | What they get |
 |---|---|---|
-| 🧑 **Patient** | Understand prescription or report | Simple explanation, voice, reminders |
-| 👨‍👩‍👧 **Caregiver** | Manage medicine for a parent or child | Shared plan, alerts, easy handoff |
-| 👴 **Elderly user** | Low-text, voice-first interface | Audio guidance and large UI |
-| 🌾 **Rural / first-time digital user** | Simple, low-data, Urdu-first | Icon-driven UI, clear actions |
-| 🏥 **Clinic / pharmacy** | Better patient understanding and adherence | White-label patient-communication tool |
+| 🧑 **Patient** | Understand a prescription or report | Plain Urdu and Roman Urdu cards, voice readout |
+| 👨‍👩‍👧 **Family caregiver** | Manage medicine for parents or children | Daily schedule, missed-dose alerts, consent-based summary |
+| 👴 **Elderly user** | Low-text, audio-friendly interface | High contrast, large text, speech playback |
+| 🌾 **Rural / first-time digital user** | Simple visual actions | Icon-supported Urdu-first navigation, compressed uploads |
+| 🏥 **Clinic / pharmacy** | Better comprehension and adherence | Branded patient-communication portal |
 
 ---
 
@@ -192,12 +232,11 @@ In Pakistan, a prescription is easy to receive but hard to understand. It is oft
 <details open>
 <summary><b>💊 Journey 1: Understand a prescription</b></summary>
 
-1. Tap **"Prescription samajhna hai"**
-2. Upload a photo (or paste text)
-3. Review and confirm the extracted medicines
-4. Read or **listen** to the Urdu / Roman Urdu explanation
-5. Get a visual daily schedule
-6. See warnings and "confirm with your pharmacist" notes
+1. Upload a photo (or paste text)
+2. Review and confirm the extracted medicines on `/review`
+3. Read or **listen** to the Urdu / Roman Urdu explanation on `/explain`
+4. Get a visual daily schedule on `/schedule`
+5. See warnings and a "discuss with your doctor" anchor
 
 > *"Yeh antibiotic infection ke liye di gayi hai. Din mein 2 dafa, khane ke baad leni hai. 5 din tak leni hai. Agar rash ya saans ki takleef ho to foran doctor se rabta karein."*
 
@@ -207,21 +246,28 @@ In Pakistan, a prescription is easy to receive but hard to understand. It is oft
 <summary><b>🧪 Journey 2: Understand a lab report</b></summary>
 
 1. Upload the report
-2. AI identifies each test and value
-3. Each value is explained and labelled **Normal / Needs attention / Discuss with doctor**
-4. Get a "Questions to ask your doctor" checklist
-
-The app never says "you have disease X."
+2. Each test and value is identified
+3. Each value is labelled **Normal / Needs Attention / Discuss with Doctor / Unknown**
+4. The app never says "you have disease X"
 
 </details>
 
 <details>
-<summary><b>🚨 Journey 3: Emergency safety check</b></summary>
+<summary><b>👵 Journey 3: Ammi Mode (zero literacy)</b></summary>
 
-1. User types a symptom such as chest pain, fainting or severe breathing difficulty
-2. The **rule engine** flags it instantly
-3. A full-screen emergency guidance page appears
-4. The user is told to seek immediate in-person help, with no diagnosis and no delay
+1. Open `/ammi`
+2. See one medicine at a time with sunrise / sun / moon / meal pictograms
+3. Tap once to hear the Urdu instruction
+
+</details>
+
+<details>
+<summary><b>🚨 Journey 4: Emergency safety check</b></summary>
+
+1. User types a symptom such as "chest pain", or presses `Shift+E`
+2. The **rule engine** flags it instantly, with no AI wait
+3. A full-screen emergency page appears (`tel:1122`, `tel:115`)
+4. The user is told to seek immediate in-person help
 
 </details>
 
@@ -229,74 +275,31 @@ The app never says "you have disease X."
 
 ## 🛠 Tech Stack
 
-> 📝 *Replace the items below with what your team actually used.*
-
 <div align="center">
 
 |  | Technology | Purpose |
 |--|-----------|---------|
-| ⚛️ | **Next.js + React** | Web app framework |
-| 🎨 | **Tailwind CSS** | Accessible, responsive UI |
-| 🔍 | **OCR** (`YOUR_OCR`, e.g. Tesseract.js / Google Vision) | Read prescription and report text |
-| 🧠 | **LLM API** (`YOUR_LLM`, e.g. Claude / Gemini) | Structured extraction + Urdu / Roman Urdu generation |
-| 🛡️ | **Rule-based safety engine** | Deterministic red-flag detection |
-| 🔊 | **Web Speech API (TTS)** | Voice playback of explanations |
-| 📍 | **Geolocation + curated facility data** | Care navigation |
-| 🚀 | **Vercel** | Deployment |
+| ⚛️ | **Next.js App Router + TypeScript (strict)** | Web app framework |
+| 🎨 | **Tailwind CSS** | Dark-first, high-readability UI |
+| 🎞️ | **Framer Motion** | Springs, scan beam, animated check/cross, reduced-motion support |
+| 🧠 | **Google GenAI SDK (`@google/genai`)** | Gemini Vision OCR + structured extraction |
+| ✅ | **Zod** | Runtime validation of AI output |
+| 🔍 | **Tesseract.js** | OCR fallback |
+| 🔊 | **Web Speech API** | Urdu voice playback |
+| ☁️ | **Firebase (optional)** | Auth, Firestore, Storage with consent-gated rules |
+| 🖼️ | **lucide-react** | Icons |
 
 </div>
 
 ---
 
-## 🛡️ Safety, Ethics & Privacy
-
-| Principle | How we apply it |
-|---|---|
-| **Not a diagnostic tool** | No diagnosis, treatment advice, prescribing or medicine substitution |
-| **Safety overrides AI** | Rule engine beats LLM output for emergency symptoms |
-| **No hallucinated medicine** | Structured, source-bound extraction; ambiguous fields are flagged, not guessed |
-| **Human confirmation** | User reviews extracted text before explanation is generated |
-| **Synthetic data only** | Demo uses synthetic or authorized non-sensitive documents |
-| **Privacy by design** | Minimal data, explicit consent, delete uploads and summaries anytime |
-| **Transparency** | Every clinical output states it is informational support, not clinical advice |
-
-Aligned with WHO guidance on transparency, inclusiveness and avoiding avoidable harm in AI for health.
-
----
-
-## 💰 Startup & Business Model
-
-**Value proposition:** close the gap between *receiving* medical information and *understanding* it, improving confidence, adherence and access to appropriate care.
-
-| Revenue stream | Customer | Model |
-|---|---|---|
-| 🏥 **B2B SaaS** | Clinics, hospitals, pharmacies | Monthly subscription, branded patient-communication portal |
-| 📞 **Telehealth referrals** | Telehealth platforms | Pay-per-qualified-referral or revenue share |
-| 💊 **Pharmacy adherence** | Pharmacies | Subscription for reminder and counselling tools |
-| 🤝 **Community health** | NGOs, employers, insurers | Health-literacy and accessibility programs |
-| 🔌 **API licensing** | Health apps, hospitals | Usage-based document-comprehension API |
-
-**Go-to-market:** launch through clinics, pharmacies and community-health organizations, so patients don't need to build a new habit on their own.
-
-**Scalability:** the same engine extends to discharge summaries, vaccination records, maternal-health instructions and chronic-disease care plans.
-
-### 🥊 Why Sehat Saathi is different
-
-| Existing solution | Limitation | Our advantage |
-|---|---|---|
-| Symptom chatbots | Diagnosis-style advice | Explains **real medical documents** |
-| Translation apps | Translate words, not care | Produces schedules, warnings and next steps |
-| Telemedicine apps | Need typing and digital confidence | Voice-first, low-literacy, caregiver-supported |
-| Reminder apps | Manual data entry | Schedule built **automatically** from the prescription |
-| Hospital portals | English-heavy, complex | Urdu-first, accessible, family-centred |
-
----
-
 ## ⚡ Run Locally
+
+**Prerequisites:** Node.js 20+ (tested on v22), npm 10+, and a [Google Gemini API key](https://aistudio.google.com/).
 
 ```bash
 # 1. Clone
-git clone https://github.com/YOUR_USERNAME/sehat-saathi.git
+git clone https://github.com/mabdullahab614-alt/sehat-saathi.git
 cd sehat-saathi
 
 # 2. Install
@@ -304,24 +307,38 @@ npm install
 
 # 3. Configure environment
 cp .env.example .env.local
-# → open .env.local and add your API keys (never commit this file)
+# → open .env.local and set GEMINI_API_KEY=your_actual_key
 
 # 4. Run
 npm run dev
 # → http://localhost:3000
 ```
 
+**Production build check:**
+
+```bash
+npm run lint
+npx tsc --noEmit
+npm run build
+npm run start
+```
+
 ### 🔐 Environment variables
 
 See [`.env.example`](.env.example):
 
-```env
-LLM_API_KEY=your_llm_api_key_here
-OCR_API_KEY=your_ocr_api_key_here   # only if using a cloud OCR
-NEXT_PUBLIC_APP_URL=http://localhost:3000
-```
+| Variable | Required | Description |
+|---|---|---|
+| `GEMINI_API_KEY` | Yes (for live OCR and extraction) | Server-side Gemini key. Never exposed to the browser. |
+| `GEMINI_MODEL` | Optional | Override the default Gemini model. |
+| `NEXT_PUBLIC_FIREBASE_API_KEY` | Optional | Firebase Web App API key. App runs in local demo mode if omitted. |
+| `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN` | Optional | Firebase Auth domain. |
+| `NEXT_PUBLIC_FIREBASE_PROJECT_ID` | Optional | Firebase project ID. |
+| `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET` | Optional | Storage bucket for consent-gated demo uploads. |
+| `NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID` | Optional | Firebase Cloud Messaging sender ID. |
+| `NEXT_PUBLIC_FIREBASE_APP_ID` | Optional | Firebase Web App ID. |
 
-> 🚫 Never commit real API keys. `.env.local` is git-ignored.
+> 🚫 Never commit `.env.local` or real API keys.
 
 ---
 
@@ -331,18 +348,27 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 
 ```
 sehat-saathi/
-├── app/                  # Next.js routes and screens
-│   ├── page.tsx          # Home
-│   ├── upload/           # Upload + review
-│   ├── explain/          # Explanation + voice
-│   ├── schedule/         # Medicine schedule
+├── app/
+│   ├── page.tsx          # Landing + command bar
+│   ├── dashboard/        # Dashboard
+│   ├── upload/           # Upload + OCR
+│   ├── review/           # AI Ka Yaqeen review
+│   ├── explain/          # Explanation, voice, teach-back, Q&A, strip match
+│   ├── ammi/             # Zero-literacy Ammi Mode
+│   ├── schedule/         # Medicine schedule + reminders
+│   ├── family/           # Mera Khandaan family health tree
+│   ├── eval/             # Live accuracy scorecard + safety challenge
+│   ├── care/             # Lahore care navigation
+│   ├── caregiver/        # Caregiver summary
 │   ├── emergency/        # Red-flag screen
-│   ├── care/             # Care navigation
-│   └── caregiver/        # Caregiver mode
+│   └── api/              # teach-back, ask-medicine, medicine-match,
+│                         # family-summary, eval, safety-challenge
 ├── lib/
-│   ├── ocr/              # OCR layer
-│   ├── llm/              # Extraction + Urdu generation
-│   └── safety/           # Rule-based red-flag engine
+│   ├── ai/               # ocr.ts, gemini.ts, prompts.ts, schemas.ts
+│   ├── safety/           # redFlags.ts (deterministic engine)
+│   └── utils/            # validate.ts
+├── firestore.rules
+├── storage.rules
 ├── banner.svg
 ├── .env.example
 └── README.md
@@ -350,26 +376,65 @@ sehat-saathi/
 
 ---
 
-## 🧪 Demo Flow
+## 🛡️ Safety, Ethics & Privacy
 
-1. Upload a **synthetic** prescription
-2. Watch OCR extraction and confirm the fields
-3. Play the **Urdu voice explanation**
-4. Open the **visual medicine schedule**
-5. Type *"chest pain"* → **emergency screen** triggers instantly
-6. Open the **care finder**
-7. Switch to **caregiver mode** and view the shared summary
+| Principle | How we apply it |
+|---|---|
+| **Not a diagnostic tool** | No diagnosis, prescribing, or treatment changes |
+| **Safety overrides AI** | Red-flag symptoms bypass AI generation and go straight to emergency guidance |
+| **No fabricated facts** | Extraction is source-bound; unclear fields require user confirmation |
+| **Human confirmation** | User reviews extracted data before explanations are shown |
+| **Persistent disclaimer** | Every explanation and safety screen carries the notice below |
+| **Privacy by default** | No server-side patient database; files are processed in memory and never saved to disk |
+| **User control** | Local state can be deleted in one tap; caregiver sharing needs explicit consent |
+| **Synthetic data only** | Demo uses synthetic or user-authorized non-sensitive documents |
+
+> *"Yeh medical diagnosis nahi hai; emergency ya serious symptoms mein foran qualified healthcare professional se rabta karein."*
+
+---
+
+## 💰 Startup & Business Model
+
+**Value proposition:** close the gap between *receiving* medical information and *understanding* it, improving confidence, adherence, and access to appropriate care.
+
+| Revenue stream | Customer | Model |
+|---|---|---|
+| 🏥 **B2B SaaS** | Clinics, hospitals, pharmacies | Monthly subscription, white-labeled Urdu / regional-language portal |
+| 💊 **Pharmacy adherence** | Pharmacies | Counseling and refill / adherence tools |
+| 📞 **Telehealth referrals** | Telehealth platforms | Qualified care-navigation handoffs |
+| 🤝 **Community health** | Employers, insurers, NGOs | Sponsored health-literacy programs |
+| 🔌 **API licensing** | Digital-health apps | Usage-based document-comprehension API |
+
+---
+
+## 🧪 3-Minute Demo Script
+
+<details>
+<summary><b>▶ Click to expand the full walkthrough</b></summary>
+
+Uses synthetic demo documents. Optional Firebase emulator seed:
+`FIRESTORE_EMULATOR_HOST=127.0.0.1:8080 node scripts/seed-demo.mjs`
+
+| Time | Screen | What to do |
+|---|---|---|
+| **0:00** | Landing (`/`) | Show the language switch, press `⌘/Ctrl + K` for the command palette |
+| **0:40** | Upload (`/upload?demo=rx-1`) | Click **"Demo Try Karein"** and watch OCR, red-flag check, and extraction |
+| **1:20** | Review (`/review`) | Inspect amber-highlighted fields against the original image, then confirm |
+| **1:45** | Explain (`/explain`, `/ammi`) | Play Urdu voice, try Teach-Back, Ask Medicine, Strip Match, then Ammi Mode |
+| **2:15** | Schedule & Family (`/schedule`, `/family`) | Tick a dose, enable reminders, load the sample family, export or print |
+| **2:45** | Emergency (`/emergency`) | Press `Shift+E` or type "chest pain" to show instant escalation |
+
+</details>
 
 ---
 
 ## 🗺 Roadmap
 
-- [ ] Regional languages (Punjabi, Sindhi, Pashto)
-- [ ] WhatsApp-based reminders
-- [ ] Offline-capable lightweight mode
-- [ ] Drug-interaction checks against a verified database
-- [ ] Clinician-validated review of explanation quality
-- [ ] Pilot with a partner clinic or pharmacy
+- [ ] Regional languages (Punjabi, Sindhi, Pashto, Balochi, Saraiki) with neural Urdu voice
+- [ ] Handwriting-specialized pharmacy verification and pharmacist review handoff
+- [ ] Longitudinal chronic-care adherence trends with opt-in encrypted caregiver sync
+- [ ] Offline-friendly PWA caching for low-connectivity clinics
+- [ ] Integration with verified clinic / pharmacy registries and HL7/FHIR lab exports
 
 ---
 
@@ -388,13 +453,17 @@ sehat-saathi/
 
 ## ⚠️ Medical Disclaimer
 
-Sehat Saathi is an **informational and educational tool**. It is **not** a medical device, does **not** provide diagnosis or treatment, and is **not** clinically validated. Always confirm medicines and doses with a pharmacist or doctor. **In an emergency, call your local emergency number or go to the nearest hospital immediately.**
+Sehat Saathi is an **informational and educational tool**. It is **not** a medical device, does **not** provide diagnosis or treatment, and is **not** clinically validated. Always confirm medicines and doses with a pharmacist or doctor. **In an emergency, call 1122 or go to the nearest hospital immediately.**
 
 ---
 
 ## 📜 License
 
-**All Rights Reserved © 2026 Abdullah Javid and team** *(change this if your team prefers MIT or another license)*
+**All Rights Reserved © 2026 Abdullah Javid and team**
+
+This repository is publicly visible **for portfolio and demonstration purposes only**. No part of it may be copied, modified, distributed, or used, for personal, educational, or commercial purposes, without explicit prior written permission from the authors. Forking or cloning does **not** grant any rights.
+
+📧 **Email:** mabdullah.ab614@gmail.com
 
 ---
 
