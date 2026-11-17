@@ -1,12 +1,8 @@
 <div align="center">
 
 <a href="https://duo-ai-hackathon.vercel.app/">
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:05070A,50:0047FF,100:C8FF00&height=280&section=header&text=Sehat%20Saathi&fontSize=80&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=%D8%B5%D8%AD%D8%AA%20%D8%B3%D8%A7%D8%AA%DA%BE%DB%8C%20%E2%80%A2%20Urdu-First%20AI%20Health%20Navigator&descSize=22&descAlignY=62" width="100%" alt="Sehat Saathi - Urdu-First AI Health Navigator for SDG 3"/>
+<img src="assets/banner.svg" width="100%" alt="Sehat Saathi - Urdu-First AI Health Navigator for SDG 3"/>
 </a>
-
-<br/>
-
-<img src="assets/logo.png" width="260" alt="Sehat Saathi logo - AI Health Companion"/>
 
 <br/>
 
@@ -127,7 +123,7 @@
 
 ### 🎨 Brand
 
-<img src="assets/logo.png" width="320" alt="Sehat Saathi AI Health Companion logo"/>
+<img src="./assets/logo.png" width="320" alt="Sehat Saathi AI Health Companion logo"/>
 
 </div>
 
