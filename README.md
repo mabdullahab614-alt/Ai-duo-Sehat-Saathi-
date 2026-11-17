@@ -1,18 +1,18 @@
 <div align="center">
 
-<a href="https://ai-hackathon-h4rh5ib5s-princearis11s-projects.vercel.app/">
+<a href="https://ai-hackathon-1-mu.vercel.app/">
 <img src="banner.svg" width="100%" alt="Sehat Saathi (صحت ساتھی): Urdu-first AI prescription and lab report reader with voice, medicine schedule and emergency safety engine"/>
 </a>
 
 <h3>Urdu-first AI that reads your prescription and lab report, explains it in Urdu & Roman Urdu with voice, builds your daily medicine schedule, and overrides the AI with a safety engine when it matters.</h3>
 
-<a href="https://ai-hackathon-h4rh5ib5s-princearis11s-projects.vercel.app/">
+<a href="https://ai-hackathon-1-mu.vercel.app/">
 <img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=20&pause=900&color=0F766E&center=true&vCenter=true&width=820&height=40&lines=Dawa+ki+parchi+samajh+nahi+aati%3F+Photo+kheenchein.;Prescription+%E2%86%92+Urdu+Voice+in+seconds+%F0%9F%97%A3%EF%B8%8F;Daily+medicine+schedule%2C+built+automatically+%F0%9F%92%8A;Emergency+rules+that+override+the+AI+%F0%9F%9A%A8;Ammi+Mode%3A+built+for+zero-literacy+users+%F0%9F%91%B5;Built+for+UN+SDG+3%3A+Good+Health+and+Well-Being+%F0%9F%8C%8D" alt="Sehat Saathi rotating feature highlights"/>
 </a>
 
 <br/>
 
-<a href="https://ai-hackathon-h4rh5ib5s-princearis11s-projects.vercel.app/">
+<a href="https://ai-hackathon-1-mu.vercel.app/">
 <img src="https://img.shields.io/badge/▶%20%20T R Y %20 T H E %20 L I V E %20 A P P-0F766E?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0B1F2A" height="52" alt="Try the Sehat Saathi live app"/>
 </a>
 
@@ -419,7 +419,7 @@ Urdu script, Roman Urdu and English today. Punjabi, Sindhi, Pashto, Balochi and 
 
 <div align="center">
 
-<a href="https://ai-hackathon-h4rh5ib5s-princearis11s-projects.vercel.app/">
+<a href="https://ai-hackathon-1-mu.vercel.app/">
 <img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=22&pause=1000&color=0F766E&center=true&vCenter=true&width=760&height=44&lines=Every+patient+deserves+to+understand+their+own+health.;Healthcare+in+the+language+you+speak+%F0%9F%92%9A;Star+%E2%AD%90+the+repo+if+this+helped+you." alt="Every patient deserves to understand their own health"/>
 </a>
 
