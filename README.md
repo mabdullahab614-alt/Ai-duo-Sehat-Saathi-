@@ -2,7 +2,7 @@
 
 <!-- Animated Banner — clickable -->
 <a href="https://YOUR_LIVE_DEMO_URL">
-<img src="assets/banner.svg" width="100%" alt="Sehat Saathi — Urdu-First AI Health Navigator"/>
+<img src="banner.svg" width="100%" alt="Sehat Saathi — Urdu-First AI Health Navigator"/>
 </a>
 
 <br/>
@@ -343,7 +343,7 @@ sehat-saathi/
 │   ├── ocr/              # OCR layer
 │   ├── llm/              # Extraction + Urdu generation
 │   └── safety/           # Rule-based red-flag engine
-├── assets/banner.svg
+├── banner.svg
 ├── .env.example
 └── README.md
 ```
