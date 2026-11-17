@@ -9,28 +9,28 @@
 <h3>Urdu-First AI Prescription & Lab Report Reader with Voice, Medicine Schedule and Emergency Safety Engine</h3>
 
 <a href="https://YOUR_LIVE_DEMO_URL">
-<img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=18&pause=800&color=34D399&center=true&vCenter=true&width=800&lines=Dawa+ki+parchi+samajh+nahi+aati%3F+Photo+kheenchein.;%F0%9F%93%B7+Prescription+%E2%86%92+%F0%9F%97%A3%EF%B8%8F+Urdu+Voice+in+seconds;%F0%9F%92%8A+Auto-Built+Daily+Medicine+Schedule;%F0%9F%9A%A8+Safety+Engine+That+Overrides+the+AI;%F0%9F%91%B5+Ammi+Mode+for+Zero-Literacy+Users;%F0%9F%8C%8D+Built+for+UN+SDG+3%3A+Good+Health+and+Well-Being" alt="Sehat Saathi features"/>
+<img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=18&pause=800&color=3B82F6&center=true&vCenter=true&width=800&lines=Dawa+ki+parchi+samajh+nahi+aati%3F+Photo+kheenchein.;%F0%9F%93%B7+Prescription+%E2%86%92+%F0%9F%97%A3%EF%B8%8F+Urdu+Voice+in+seconds;%F0%9F%92%8A+Auto-Built+Daily+Medicine+Schedule;%F0%9F%9A%A8+Safety+Engine+That+Overrides+the+AI;%F0%9F%91%B5+Ammi+Mode+for+Zero-Literacy+Users;%F0%9F%8C%8D+Built+for+UN+SDG+3%3A+Good+Health+and+Well-Being" alt="Sehat Saathi features"/>
 </a>
 
 <br/><br/>
 
 <a href="https://YOUR_LIVE_DEMO_URL">
-<img src="https://img.shields.io/badge/▶%20%20T R Y %20 L I V E %20 D E M O-10b981?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=022c22" height="55" alt="Try Sehat Saathi live demo"/>
+<img src="https://img.shields.io/badge/▶%20%20T R Y %20 L I V E %20 D E M O-0047FF?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=05070A" height="55" alt="Try Sehat Saathi live demo"/>
 </a>
 
 <br/><br/>
 
-<img src="https://img.shields.io/badge/UN%20SDG-3%20Good%20Health-4C9F38?style=for-the-badge&labelColor=0f172a" alt="UN SDG 3"/>
-<img src="https://img.shields.io/badge/Urdu-First-10B981?style=for-the-badge&labelColor=0f172a" alt="Urdu first"/>
-<img src="https://img.shields.io/badge/Voice-First-06B6D4?style=for-the-badge&labelColor=0f172a" alt="Voice first"/>
-<img src="https://img.shields.io/badge/Gemini-Vision%20OCR-8B5CF6?style=for-the-badge&labelColor=0f172a" alt="Gemini Vision OCR"/>
-<img src="https://img.shields.io/badge/Next.js-TypeScript-000000?style=for-the-badge&logo=nextdotjs&labelColor=0f172a" alt="Next.js TypeScript"/>
+<img src="https://img.shields.io/badge/UN%20SDG-3%20Good%20Health-4C9F38?style=for-the-badge&labelColor=05070A" alt="UN SDG 3"/>
+<img src="https://img.shields.io/badge/Urdu-First-0047FF?style=for-the-badge&labelColor=05070A" alt="Urdu first"/>
+<img src="https://img.shields.io/badge/Voice-First-C8FF00?style=for-the-badge&labelColor=05070A" alt="Voice first"/>
+<img src="https://img.shields.io/badge/Gemini-Vision%20OCR-1E3A8A?style=for-the-badge&labelColor=05070A" alt="Gemini Vision OCR"/>
+<img src="https://img.shields.io/badge/Next.js-TypeScript-000000?style=for-the-badge&logo=nextdotjs&labelColor=05070A" alt="Next.js TypeScript"/>
 
 <br/><br/>
 
-<img src="https://img.shields.io/badge/Not%20a-Diagnostic%20Tool-F59E0B?style=for-the-badge&labelColor=0f172a" alt="Not a diagnostic tool"/>
-<img src="https://img.shields.io/badge/Data-Synthetic%20Only-3B82F6?style=for-the-badge&labelColor=0f172a" alt="Synthetic data only"/>
-<img src="https://img.shields.io/badge/STCS%20AI%20Hackathon-2026-EC4899?style=for-the-badge&labelColor=0f172a" alt="STCS AI Hackathon 2026"/>
+<img src="https://img.shields.io/badge/Not%20a-Diagnostic%20Tool-FF3B30?style=for-the-badge&labelColor=05070A" alt="Not a diagnostic tool"/>
+<img src="https://img.shields.io/badge/Data-Synthetic%20Only-334155?style=for-the-badge&labelColor=05070A" alt="Synthetic data only"/>
+<img src="https://img.shields.io/badge/STCS%20AI%20Hackathon-2026-C8FF00?style=for-the-badge&labelColor=05070A" alt="STCS AI Hackathon 2026"/>
 
 <br/><br/>
 
@@ -499,7 +499,7 @@ This repository is publicly visible **for portfolio and demonstration purposes o
 <div align="center">
 
 <a href="https://YOUR_LIVE_DEMO_URL">
-<img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=20&pause=1000&color=34D399&center=true&vCenter=true&width=700&lines=Every+patient+deserves+to+understand+their+own+health.;Healthcare+in+the+language+you+speak+%F0%9F%92%9A;Star+%E2%AD%90+if+this+made+you+smile!" alt="Every patient deserves to understand their own health"/>
+<img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=20&pause=1000&color=3B82F6&center=true&vCenter=true&width=700&lines=Every+patient+deserves+to+understand+their+own+health.;Healthcare+in+the+language+you+speak+%F0%9F%92%99;Star+%E2%AD%90+if+this+made+you+smile!" alt="Every patient deserves to understand their own health"/>
 </a>
 
 <br/><br/>
@@ -507,7 +507,7 @@ This repository is publicly visible **for portfolio and demonstration purposes o
 <a href="https://github.com/mabdullahab614-alt"><img src="https://img.shields.io/badge/GitHub-mabdullahab614--alt-181717?style=for-the-badge&logo=github" alt="GitHub"/></a>
 <a href="mailto:mabdullah.ab614@gmail.com"><img src="https://img.shields.io/badge/Email-mabdullah.ab614%40gmail.com-ff2d2d?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 <a href="https://www.linkedin.com/in/abdullah-javid-b217a2384/"><img src="https://img.shields.io/badge/LinkedIn-Abdullah%20Javid-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="https://YOUR_LIVE_DEMO_URL"><img src="https://img.shields.io/badge/%F0%9F%8C%90%20Try%20Sehat%20Saathi-10b981?style=for-the-badge" alt="Try Sehat Saathi"/></a>
+<a href="https://YOUR_LIVE_DEMO_URL"><img src="https://img.shields.io/badge/%F0%9F%8C%90%20Try%20Sehat%20Saathi-0047FF?style=for-the-badge" alt="Try Sehat Saathi"/></a>
 
 <br/>
 
