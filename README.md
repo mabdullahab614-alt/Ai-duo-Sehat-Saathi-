@@ -1,260 +1,124 @@
-<div align="center">
+# Sehat Saathi (`صحت ساتھی`)
 
-<a href="https://ai-hackathon-h4rh5ib5s-princearis11s-projects.vercel.app/">
-<img src="banner.svg" width="100%" alt="Sehat Saathi (صحت ساتھی): Urdu-first AI prescription and lab report reader with voice, medicine schedule and emergency safety engine"/>
-</a>
+**Urdu-First AI Health Navigator for SDG 3: Good Health and Well-Being**
 
-<h3>Urdu-first AI that reads your prescription and lab report, explains it in Urdu & Roman Urdu with voice, builds your daily medicine schedule, and overrides the AI with a safety engine when it matters.</h3>
+> **Tagline:** *Sehat Saathi turns prescriptions and lab reports into simple Urdu/Roman-Urdu voice explanations, daily medication schedules, safety alerts, and next-step care navigation.*
 
-<a href="https://ai-hackathon-h4rh5ib5s-princearis11s-projects.vercel.app/">
-<img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=20&pause=900&color=0F766E&center=true&vCenter=true&width=820&height=40&lines=Dawa+ki+parchi+samajh+nahi+aati%3F+Photo+kheenchein.;Prescription+%E2%86%92+Urdu+Voice+in+seconds+%F0%9F%97%A3%EF%B8%8F;Daily+medicine+schedule%2C+built+automatically+%F0%9F%92%8A;Emergency+rules+that+override+the+AI+%F0%9F%9A%A8;Ammi+Mode%3A+built+for+zero-literacy+users+%F0%9F%91%B5;Built+for+UN+SDG+3%3A+Good+Health+and+Well-Being+%F0%9F%8C%8D" alt="Sehat Saathi rotating feature highlights"/>
-</a>
+---
 
-<br/>
+## Problem Statement
 
-<a href="https://ai-hackathon-h4rh5ib5s-princearis11s-projects.vercel.app/">
-<img src="https://img.shields.io/badge/▶%20%20T R Y %20 T H E %20 L I V E %20 A P P-0F766E?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0B1F2A" height="52" alt="Try the Sehat Saathi live app"/>
-</a>
+Millions of patients and caregivers receive prescriptions, lab reports, and medical instructions written in English, clinical jargon, or dense formatting. Low-literacy patients, elderly users, rural and first-time digital users, and busy family caregivers often struggle to understand:
 
-<br/><br/>
+- What each medicine is for and how/when to take it (before or after meals, morning vs. night)
+- Whether lab test results need attention or discussion with a doctor
+- Which warning signs require **immediate emergency care** rather than waiting
 
-<img src="https://img.shields.io/badge/UN_SDG_3-Good_Health-4C9F38?style=flat-square&labelColor=0B1F2A" alt="UN SDG 3"/>
-<img src="https://img.shields.io/badge/Urdu-First-0F766E?style=flat-square&labelColor=0B1F2A" alt="Urdu first"/>
-<img src="https://img.shields.io/badge/Voice-First-14B8A6?style=flat-square&labelColor=0B1F2A" alt="Voice first"/>
-<img src="https://img.shields.io/badge/Gemini-Vision_OCR-FDBA74?style=flat-square&labelColor=0B1F2A" alt="Gemini Vision OCR"/>
-<img src="https://img.shields.io/badge/Next.js-TypeScript-0B1F2A?style=flat-square&logo=nextdotjs" alt="Next.js TypeScript"/>
-<img src="https://img.shields.io/badge/Zod-Validated_AI-3068B7?style=flat-square&labelColor=0B1F2A" alt="Zod validated AI output"/>
-<img src="https://img.shields.io/badge/Not_a-Diagnostic_Tool-C2410C?style=flat-square&labelColor=0B1F2A" alt="Not a diagnostic tool"/>
-<img src="https://img.shields.io/badge/Data-Synthetic_Only-6B7280?style=flat-square&labelColor=0B1F2A" alt="Synthetic data only"/>
+This comprehension gap causes medication errors, missed doses, anxiety, delayed care, and unsafe reliance on informal advice.
 
-<br/><br/>
+---
 
-<sub>
-<a href="#-the-30-second-pitch"><b>⚡ Pitch</b></a> &nbsp;·&nbsp;
-<a href="#-how-it-works"><b>🧬 How it works</b></a> &nbsp;·&nbsp;
-<a href="#-the-prescription"><b>℞ Features</b></a> &nbsp;·&nbsp;
-<a href="#-why-this-should-win"><b>🏆 Why we win</b></a> &nbsp;·&nbsp;
-<a href="#%EF%B8%8F-contraindications"><b>🛡️ Safety</b></a> &nbsp;·&nbsp;
-<a href="#-3-minute-demo"><b>🎬 Demo</b></a> &nbsp;·&nbsp;
-<a href="#-faq"><b>❓ FAQ</b></a>
-</sub>
+## Target Users
 
-</div>
+| User Group | Primary Need | How Sehat Saathi Helps |
+|---|---|---|
+| **Patients** | Understand prescriptions, lab reports, and next steps | Plain Urdu & Roman Urdu cards + voice readout |
+| **Family Caregivers** | Manage medicines for parents or children safely | Daily schedule, missed-dose alerts, consent-based summary |
+| **Elderly Users** | Low-text, large-tap, audio-friendly experience | High contrast, large text toggle, Web Speech API playback |
+| **Rural / First-Time Digital Users** | Simple visual actions without medical jargon | Icon-supported Urdu-first navigation, compressed uploads |
+| **Clinics & Pharmacies (B2B)** | Improve patient comprehension and adherence | Branded comprehension & adherence portal |
 
-<img src="ecg.svg" width="100%" alt=""/>
+---
+
+## Key Features
+
+1. **Document Upload & OCR Comprehension**: Supports JPG, PNG, WebP, and PDF uploads (with client-side image compression/resizing) plus typed prescription/report text. Uses Gemini Vision OCR with Tesseract.js fallback.
+2. **Structured Medical Extraction & User Confirmation**: Extracts medicines, strengths, doses, frequencies, durations, food instructions, lab values, reference ranges, cautions, and missing details with strict JSON Schema + Zod validation. Low-confidence or incomplete extractions require explicit user confirmation on the Review screen.
+3. **Plain Urdu, Roman Urdu & English Explanations**: Short, jargon-free medicine and lab-value cards with conservative lab status indicators (`Normal`, `Needs Attention`, `Discuss with Doctor`, `Unknown`).
+4. **Voice-First Accessibility**: Browser Web Speech API playback (play, pause, replay, speed control), large text mode (`A+`), high-contrast mode, keyboard navigation, and large touch targets.
+5. **Visual Daily Medication Schedule**: Organizes extracted instructions into Morning, Afternoon, Night, and As Needed blocks with with-food indicators, dose-taken checkboxes, and conservative missed-dose guidance.
+6. **Deterministic Emergency Safety Engine**: Rule-based red-flag detection (chest pain, severe breathing difficulty, fainting/unconsciousness, severe allergic reaction, uncontrolled bleeding, self-harm thoughts, sudden weakness/facial drooping/speech difficulty) runs before and independently of AI output to trigger immediate emergency escalation.
+7. **Lahore Care Navigation (Demo Dataset)**: Filterable informational directory of Lahore clinics, hospitals, pharmacies, and telehealth options by area, service type, affordability, and language.
+8. **Caregiver Mode (MVP)**: Simplified care summary, shared medication schedule, missed-dose alerts, and consent-based sharing with one-tap local data deletion.
+9. **Mera Khandaan — Family Health Tree (`/family`)**: Browser-local (`sehat_family_v1`) multi-generation schedule tracker (up to 3 generations, 8 members), `"Aaj poore khandaan ki dawaein"` daily timeline with `"Li"` ticks, member-scoped prescription uploads (`/upload?memberId=...`), JSON export/import, print-ready chart (`window.print()`), and live Gemini WhatsApp summary (`POST /api/family-summary`).
+10. **Ammi Mode (`/ammi`) & Pictogram Dawa Cards**: Zero-literacy single-medicine card mode with giant fonts, sunrise/sun/moon/meal pictograms, and one-touch Urdu playback.
+11. **Interactive Safety & Verification Lab (`/explain`, `/review`, `/eval`)**: Side-by-side **AI Ka Yaqeen** review panel with amber unverified field highlights, **"Samajh Gaye?"** Teach-Back comprehension check (`/api/teach-back`), **"Dawa Se Poochho"** Q&A (`/api/ask-medicine`), **"Dawa-Match Check"** strip comparison (`/api/medicine-match`), Browser Dose Reminders, **Live Accuracy Scorecard** across 5 synthetic Rx (`/api/eval`), and **"Judge, Aap Koshish Karein"** safety challenge (`/api/safety-challenge`).
+
+---
+
+## AI Architecture
 
 ```text
-┌────────────────────────────────────────────────────────────────────┐
-│  ℞   SEHAT SAATHI CLINIC PAD                                       │
-│ ────────────────────────────────────────────────────────────────── │
-│  Patient  : Anyone who can't read their own prescription           │
-│  Age      : 5 to 95                                                │
-│  Language : اردو · Roman Urdu · English                            │
-│  Date     : 17 November 2026                                       │
-│                                                                    │
-│  Diagnosis: Health-literacy gap  (not a medical diagnosis)         │
-│                                                                    │
-│  ℞  1 × Sehat Saathi                                               │
-│     Sig: Take a photo. Read it. Listen to it. Follow it.           │
-│     Refills: unlimited                                             │
-│                                                                    │
-│                                   ~ Abdullah Javid                 │
-│                                   Dispensed at STCS AI Hackathon   │
-└────────────────────────────────────────────────────────────────────┘
+User uploads prescription/report image, PDF, or typed text
+  │
+  ▼ (Client-side image resize & compression + instant red-flag check)
+OCR Extraction (/lib/ai/ocr.ts)
+  ├── Primary: Gemini Vision OCR (when GEMINI_API_KEY is configured)
+  └── Fallback: Tesseract.js OCR
+  │
+  ▼
+Rule-Based Emergency Safety Engine (/lib/safety/redFlags.ts)
+  ├── Red flag detected ──► Immediate Emergency Screen (/emergency) — bypasses AI wait
+  └── Clear ──► Continue
+  │
+  ▼
+Gemini Multimodal Structured Extraction (/lib/ai/gemini.ts + /lib/ai/prompts.ts)
+  ├── Strict JSON Schema (responseMimeType: "application/json", responseSchema)
+  └── Runtime Zod Validation (/lib/ai/schemas.ts + /lib/utils/validate.ts, retry once on failure)
+  │
+  ▼
+Plain-Language Urdu / Roman Urdu / English UI
+  ├── Side-by-Side AI Ka Yaqeen Review (/review)
+  ├── Explanation, Pictograms, Teach-Back, Q&A & Strip Match (/explain)
+  ├── Zero-Literacy Single-Card Ammi Mode (/ammi)
+  ├── Visual Medication Schedule & Browser Reminders (/schedule)
+  ├── Multi-Generation Family Health Tree & Print/WhatsApp Summary (/family)
+  ├── Live Synthetic Accuracy Scorecard & Judge Safety Challenge (/eval)
+  ├── Care Navigation — Lahore Demo Dataset (/care)
+  └── Consent-Based Caregiver Summary (/caregiver)
 ```
 
-## ⚡ The 30-Second Pitch
+---
 
-> **A prescription is easy to receive and hard to understand.**
->
-> In Pakistan it is often written in English, in medical shorthand, or in handwriting that even educated readers struggle with. Patients are left guessing: *which medicine is for what, how many times a day, before or after food, and is this lab value serious?*
->
-> **Sehat Saathi** (*"Health Companion"*) takes a **photo of a prescription or lab report** and returns a **plain Urdu / Roman Urdu explanation, a voice readout, an automatic daily medicine schedule, and an instant emergency screen** if a red-flag symptom appears.
->
-> It never diagnoses. It helps people **understand what their own doctor already told them.**
+## Tech Stack
 
-<div align="center">
+- **Framework:** Next.js App Router + TypeScript (strict mode)
+- **Styling:** Tailwind CSS (`#05070A` dark-first canvas, `#0047FF` cobalt primary, `#C8FF00` lime highlights, `#F7F8FA` high-readability cards, `#FF3B30` emergency red)
+- **Motion:** Framer Motion (tactile button springs, hero stagger, scan beam, animated SVG check/cross, sliding toolkit indicator, reduced-motion support)
+- **AI & Structured Output:** Google GenAI SDK (`@google/genai`) + strict `responseSchema`
+- **Validation:** Zod
+- **OCR:** Gemini Vision + `tesseract.js` fallback
+- **Voice:** Browser Web Speech API (`window.speechSynthesis`)
+- **Cloud Persistence (Optional Demo):** Modular Firebase Web SDK (`Auth`, `Firestore`, `Storage`) with consent-gated rules (`firestore.rules`, `storage.rules`)
+- **Icons:** `lucide-react`
 
-| 📷 **Scan** | 🔎 **Understand** | 🗣️ **Listen** | 💊 **Follow** | 🚨 **Stay safe** |
-|:---:|:---:|:---:|:---:|:---:|
-| Photo, PDF or text | Structured extraction + your confirmation | Urdu voice, large text | Daily schedule + reminders | Rules override AI |
+---
 
-</div>
+## Local Setup Instructions
 
-<img src="ecg.svg" width="100%" alt=""/>
+### Prerequisites
 
-## 🩺 The Case
+- Node.js 20+ (tested on Node v22)
+- npm 10+
+- A Google Gemini API key from [Google AI Studio](https://aistudio.google.com/)
 
-| The patient asks | What goes wrong |
-|---|---|
-| *"Yeh dawa kis cheez ki hai?"* | Wrong medicine for the wrong reason |
-| *"Kitni dafa, khane se pehle ya baad?"* | Missed or doubled doses |
-| *"Yeh lab value theek hai?"* | Needless panic, or ignored warning signs |
-| *"Kab foran hospital jaana hai?"* | Delayed emergency care |
-| *"Sasta ilaaj kahan milega?"* | Dependence on informal advice |
-
-**Low-literacy and Urdu-speaking patients cannot reliably understand prescriptions, lab reports and medical instructions.** That gap causes medication errors, missed doses, anxiety and delayed care. Sehat Saathi closes it.
-
-<img src="ecg.svg" width="100%" alt=""/>
-
-## 🧬 How It Works
-
-<div align="center">
-<img src="pipeline.svg" width="100%" alt="Animated pipeline: scan, OCR, safety engine, structured extraction, human confirmation, then Urdu explanation, voice and schedule. The safety engine can jump straight to an emergency screen."/>
-</div>
-
-**Four design rules that make it trustworthy**
-
-1. **Safety is not AI.** A deterministic rule engine (`lib/safety/redFlags.ts`) decides emergencies, so model latency can never delay help.
-2. **Structure over prose.** Gemini must answer in a strict JSON schema, validated by Zod. Invalid output is rejected and retried once.
-3. **A human signs off.** Low-confidence or missing fields must be confirmed before anything is explained.
-4. **Nothing is invented.** Extraction is bound to the uploaded document.
-
-<img src="ecg.svg" width="100%" alt=""/>
-
-## ℞ The Prescription
-
-Six "medicines". Each solves one part of the problem.
-
-<table>
-<tr>
-<td width="60" align="center"><h2>℞1</h2></td>
-<td>
-
-**📷 SCAN**<br/>
-Upload a JPG, PNG, WebP or PDF, or paste text. Images are resized in the browser. OCR runs on **Gemini Vision** with **Tesseract.js** as fallback.
-
-</td>
-</tr>
-<tr>
-<td align="center"><h2>℞2</h2></td>
-<td>
-
-**🔎 UNDERSTAND**<br/>
-Medicines, strengths, doses, frequency, duration, food instructions, lab values and reference ranges are extracted into a strict schema. Lab values get a cautious label: `Normal` · `Needs Attention` · `Discuss with Doctor` · `Unknown`. Unclear fields are flagged, never guessed.
-
-</td>
-</tr>
-<tr>
-<td align="center"><h2>℞3</h2></td>
-<td>
-
-**✅ CONFIRM, "AI Ka Yaqeen"**<br/>
-The original image sits beside the extracted fields, with amber highlights on anything unverified. The user fixes and confirms before any explanation appears.
-
-</td>
-</tr>
-<tr>
-<td align="center"><h2>℞4</h2></td>
-<td>
-
-**🗣️ LISTEN**<br/>
-Short Urdu, Roman Urdu and English cards with **voice playback** (play, pause, replay, speed). Large text (`A+`), high contrast, keyboard navigation and big touch targets.
-
-</td>
-</tr>
-<tr>
-<td align="center"><h2>℞5</h2></td>
-<td>
-
-**💊 FOLLOW**<br/>
-A visual daily schedule (Morning · Afternoon · Night · As Needed) with with-food indicators, dose checkboxes and browser reminders.
-
-</td>
-</tr>
-<tr>
-<td align="center"><h2>℞6</h2></td>
-<td>
-
-**🚨 PROTECT**<br/>
-Chest pain, severe breathing difficulty, fainting, severe allergic reaction, uncontrolled bleeding, self-harm thoughts and stroke signs trigger an instant emergency screen (`1122`, `115`). Press **`Shift+E`** from any screen.
-
-</td>
-</tr>
-</table>
-
-### ➕ Special preparations
-
-| Preparation | Route | For whom |
-|---|---|---|
-| 👵 **Ammi Mode** | `/ammi` | Zero-literacy users. One medicine per card, giant fonts, sunrise / sun / moon / meal pictograms, one-tap Urdu voice |
-| 🌳 **Mera Khandaan** | `/family` | Families. Up to 3 generations and 8 members, an *"Aaj poore khandaan ki dawaein"* timeline, JSON export/import, print chart, Gemini WhatsApp summary |
-| 🤝 **Caregiver Mode** | `/caregiver` | Caregivers. Consent-based shared summary and missed-dose alerts, one-tap local deletion |
-| 🏥 **Care Finder** | `/care` | Lahore clinics, hospitals, pharmacies and telehealth by area, type, affordability and language (demo dataset) |
-
-### 🧪 Lab tests we run on ourselves
-
-| Test | Route | What it checks |
-|---|---|---|
-| **Samajh Gaye?** | `/api/teach-back` | Did the patient actually understand? |
-| **Dawa Se Poochho** | `/api/ask-medicine` | Q&A about one medicine |
-| **Dawa-Match Check** | `/api/medicine-match` | Does the strip in your hand match the prescription? |
-| **Accuracy Scorecard** | `/eval` | Live extraction results on 5 synthetic prescriptions |
-| **Judge, Aap Koshish Karein** | `/api/safety-challenge` | Try to break the emergency engine yourself |
-
-<img src="ecg.svg" width="100%" alt=""/>
-
-## 🏆 Why This Should Win
-
-| What judges look for | What Sehat Saathi shows |
-|---|---|
-| **🎯 Real problem** | A daily, universal pain: patients cannot read their own prescriptions |
-| **💡 Innovation** | Ammi Mode, Mera Khandaan family tree, AI Ka Yaqeen verification, teach-back comprehension check |
-| **🧠 Technical depth** | Gemini Vision + Tesseract fallback, JSON-schema output, Zod validation with retry, deterministic safety engine, Web Speech voice |
-| **🛡️ Responsible AI** | Safety rules override the model, human confirmation, no diagnosis, no patient database, synthetic data only |
-| **♿ Accessibility** | Urdu script, Roman Urdu, voice, large text, high contrast, pictograms, keyboard navigation |
-| **🔬 Proof, not claims** | Live **Accuracy Scorecard** (`/eval`) and **Judge Safety Challenge** let you test it yourself |
-| **💼 Business viability** | Clinics, pharmacies, telehealth, NGOs and an API, with a clear go-to-market |
-| **🌍 Impact** | Direct fit for **UN SDG 3: Good Health and Well-Being** |
-
-<img src="ecg.svg" width="100%" alt=""/>
-
-## 📸 Waiting Room
-
-> 📝 *Add real screenshots or a short GIF in `docs/` before submitting. This section matters a lot.*
-
-| Scan | Verify | Listen | Ammi Mode |
-|:---:|:---:|:---:|:---:|
-| `docs/scan.png` | `docs/verify.png` | `docs/listen.png` | `docs/ammi.png` |
-
-| Schedule | Family Tree | Emergency | Care Finder |
-|:---:|:---:|:---:|:---:|
-| `docs/schedule.png` | `docs/family.png` | `docs/emergency.png` | `docs/care.png` |
-
-<img src="ecg.svg" width="100%" alt=""/>
-
-## 📋 Sig: How to Use
+### Installation
 
 ```bash
-git clone https://github.com/mabdullahab614-alt/Ai-duo-Sehat-Saathi-.git
-cd Ai-duo-Sehat-Saathi-
+# 1. Install dependencies
 npm install
-cp .env.example .env.local      # set GEMINI_API_KEY=your_actual_key
-npm run dev                     # → http://localhost:3000
+
+# 2. Configure environment variables
+cp .env.example .env.local
+# Edit .env.local and set GEMINI_API_KEY=your_actual_key
+
+# 3. Start the development server
+npm run dev
 ```
 
-Requires Node.js 20+, npm 10+ and a [Gemini API key](https://aistudio.google.com/).
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-<details>
-<summary><b>Environment variables</b></summary>
-
-| Variable | Required | Notes |
-|---|---|---|
-| `GEMINI_API_KEY` | Yes | Server-side only, never sent to the browser |
-| `GEMINI_MODEL` | Optional | Override the default Gemini model |
-| `NEXT_PUBLIC_FIREBASE_API_KEY` | Optional | App runs in local demo mode without Firebase |
-| `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN` | Optional | |
-| `NEXT_PUBLIC_FIREBASE_PROJECT_ID` | Optional | |
-| `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET` | Optional | Consent-gated demo uploads |
-| `NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID` | Optional | |
-| `NEXT_PUBLIC_FIREBASE_APP_ID` | Optional | |
-
-Never commit `.env.local` or real keys.
-
-</details>
-
-<details>
-<summary><b>Production build check</b></summary>
+### Production Build Check
 
 ```bash
 npm run lint
@@ -263,179 +127,64 @@ npm run build
 npm run start
 ```
 
-</details>
+---
 
-<details>
-<summary><b>Project structure</b></summary>
+## Environment Variables
 
-```text
-sehat-saathi/
-├── app/
-│   ├── page.tsx        dashboard/   upload/    review/
-│   ├── explain/        ammi/        schedule/  family/
-│   ├── eval/           care/        caregiver/ emergency/
-│   └── api/            teach-back · ask-medicine · medicine-match
-│                       family-summary · eval · safety-challenge
-├── lib/
-│   ├── ai/             ocr.ts · gemini.ts · prompts.ts · schemas.ts
-│   ├── safety/         redFlags.ts
-│   └── utils/          validate.ts
-├── banner.svg · ecg.svg · pipeline.svg
-├── firestore.rules
-└── storage.rules
-```
+See [`.env.example`](.env.example):
 
-*Adjust to match your actual folders.*
-
-</details>
-
-<img src="ecg.svg" width="100%" alt=""/>
-
-## ⚠️ Contraindications
-
-What Sehat Saathi will **never** do:
-
-| ✖ Never | ✔ Instead |
-|---|---|
-| Diagnose a disease | Explain what the document says and suggest questions for your doctor |
-| Prescribe or change a dose | Show exactly what the prescription states |
-| Guess an unclear word | Flag it and ask you to confirm |
-| Wait for the AI in an emergency | Show the emergency screen immediately |
-| Keep your files | Process them in memory only; no server-side patient database |
-| Share without consent | Caregiver sharing is opt-in; local data deletes in one tap |
-
-Every explanation and safety screen carries this notice:
-
-> *"Yeh medical diagnosis nahi hai; emergency ya serious symptoms mein foran qualified healthcare professional se rabta karein."*
-
-**Demo data policy:** only synthetic or user-authorized, non-sensitive documents.
-
-## 🧪 Ingredients
-
-| Ingredient | Role |
-|---|---|
-| **Next.js App Router + TypeScript (strict)** | App framework |
-| **Tailwind CSS** | Dark-first, high-readability UI |
-| **Framer Motion** | Springs, scan beam, animated check/cross, reduced-motion support |
-| **Google GenAI SDK** (`@google/genai`) | Vision OCR and structured extraction |
-| **Zod** | Runtime validation of AI output |
-| **Tesseract.js** | OCR fallback |
-| **Web Speech API** | Urdu voice playback |
-| **Firebase** *(optional)* | Auth, Firestore, Storage with consent-gated rules |
-| **lucide-react** | Icons |
-
-<img src="ecg.svg" width="100%" alt=""/>
-
-## 🎬 3-Minute Demo
-
-<details open>
-<summary><b>Walkthrough with synthetic data</b></summary>
-
-| Time | Open | Do this |
+| Variable | Required | Description |
 |---|---|---|
-| **0:00** | `/` | Switch language, press `⌘/Ctrl + K` for the command palette |
-| **0:40** | `/upload?demo=rx-1` | Tap **"Demo Try Karein"**: OCR, red-flag check, extraction |
-| **1:20** | `/review` | Compare amber fields with the original image, then confirm |
-| **1:45** | `/explain` → `/ammi` | Play Urdu voice, try Teach-Back, Ask Medicine, Strip Match, then Ammi Mode |
-| **2:15** | `/schedule` → `/family` | Tick a dose, enable reminders, load the sample family, print |
-| **2:45** | `/emergency` | Press `Shift+E` or type "chest pain" |
+| `GEMINI_API_KEY` | Yes (for live Gemini OCR & extraction) | Server-side Google Gemini API key. Never exposed to the browser. |
+| `GEMINI_MODEL` | Optional | Override default Gemini model (`gemini-3.8-flash`). |
+| `NEXT_PUBLIC_FIREBASE_API_KEY` | Optional (Firebase Auth/Firestore/Storage) | Firebase Web App API key. App runs in local demo mode if omitted. |
+| `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN` | Optional | Firebase Auth domain (`your_project.firebaseapp.com`). |
+| `NEXT_PUBLIC_FIREBASE_PROJECT_ID` | Optional | Firebase Project ID. |
+| `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET` | Optional | Firebase Cloud Storage bucket for consent-gated demo uploads. |
+| `NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID` | Optional | Firebase Cloud Messaging sender ID. |
+| `NEXT_PUBLIC_FIREBASE_APP_ID` | Optional | Firebase Web App ID. |
 
-Optional emulator seed: `FIRESTORE_EMULATOR_HOST=127.0.0.1:8080 node scripts/seed-demo.mjs`
+---
 
-</details>
+## Safety and Privacy Policy
 
-## 💼 Business Model
+- **Non-Diagnostic Tool:** Sehat Saathi does **not** diagnose diseases, prescribe medications, or recommend treatment changes.
+- **Persistent Disclaimer:** Every explanation and safety screen displays:
+  > *"Yeh medical diagnosis nahi hai; emergency ya serious symptoms mein foran qualified healthcare professional se rabta karein."*
+- **No Fabricated Medical Facts:** Extraction is source-bound to the uploaded document/text. Unclear or low-confidence fields require explicit user confirmation before proceeding.
+- **Emergency Override:** Mandatory red-flag symptoms bypass AI generation and immediately display emergency escalation guidance.
+- **Privacy by Default:** No server-side patient database is used. Uploaded files are processed in memory for the current request and are not saved to disk or committed to Git. Local session state in the browser can be cleared anytime via one-tap deletion, and caregiver sharing requires explicit user consent.
+- **Demo Data Policy:** Use only synthetic or user-authorized non-sensitive test documents. Never commit `.env.local`, API keys, or real patient records.
 
-| Customer | What they pay for |
-|---|---|
-| 🏥 Clinics, hospitals, pharmacies | Monthly subscription for a white-labeled Urdu / regional patient-comprehension portal |
-| 💊 Pharmacies | Counseling, refill and adherence tools |
-| 📞 Telehealth platforms | Qualified care-navigation referrals |
-| 🤝 Employers, insurers, NGOs | Sponsored health-literacy programs |
-| 🔌 Digital-health apps | Usage-based document-comprehension API |
+---
 
-**Go-to-market:** reach patients through the clinics and pharmacies they already visit, so nobody has to build a new habit alone.
-**Scale:** the same engine extends to discharge summaries, vaccination records, maternal-health instructions and chronic-care plans.
+## Startup & Business Model
 
-## 🔄 Roadmap
+- **B2B SaaS for Clinics, Hospitals & Pharmacies:** Monthly subscription for a white-labeled Urdu/regional-language patient comprehension and discharge-instruction portal.
+- **Pharmacy Adherence Partnerships:** Medication-counseling and refill/adherence tools integrated with pharmacy workflows.
+- **Telehealth Referrals:** Qualified care-navigation handoffs to verified partner telehealth platforms.
+- **Employer, Insurer & NGO Health-Literacy Programs:** Sponsored community health-comprehension access for underserved populations.
+- **Document Comprehension API:** Usage-based structured extraction & vernacular simplification API for digital-health apps.
 
-- [ ] Punjabi, Sindhi, Pashto, Balochi and Saraiki, with neural Urdu voice
-- [ ] Handwriting-specialized pharmacy verification and pharmacist review handoff
-- [ ] Longitudinal chronic-care adherence trends with opt-in encrypted caregiver sync
-- [ ] Offline-friendly PWA for low-connectivity clinics
-- [ ] Verified clinic / pharmacy registries and HL7/FHIR lab exports
-- [ ] Pilot with a partner clinic or pharmacy
+---
 
-<img src="ecg.svg" width="100%" alt=""/>
+## 3-Minute Demo Script (End-to-End Walkthrough)
 
-## ❓ FAQ
+Using synthetic **Demo data** documents and optional local Firebase emulator seed (`FIRESTORE_EMULATOR_HOST=127.0.0.1:8080 node scripts/seed-demo.mjs`):
 
-<details>
-<summary><b>What is Sehat Saathi?</b></summary>
-An Urdu-first AI web app that reads a photo of a prescription or lab report and explains it in Urdu, Roman Urdu and English, with voice, a daily medicine schedule and an emergency safety layer.
-</details>
+1. **0:00 — Landing Hero & Command Bar (`/`):** English is selected by default; change to **Urdu / Roman Urdu** in the settings submenu, press `⌘/Ctrl + K` for the quick navigation palette, or open the **Dashboard (`/dashboard`)**.
+2. **0:40 — Upload & Scan (`/upload?demo=rx-1`):** Click **"Demo Try Karein"** (or pick any sample from the **Demo data** tray). Submit to run client compression, Tesseract/Gemini OCR (`aria-live`), deterministic red-flag safety checks, and Zod-validated structured extraction.
+3. **1:20 — Review & AI Ka Yaqeen (`/review`):** Inspect extracted fields side-by-side against the original image with amber verification highlights, edit if needed, and confirm.
+4. **1:45 — Urdu Explanation & Voice (`/explain`, `/ammi`):** Listen to Urdu voice playback, inspect pictogram dosage cards, open **Source Document** and confirm the **"Discuss with your doctor"** anchor, test **Teach-Back**, **Ask Medicine**, and **Strip Match**, or switch to **Ammi Mode (`/ammi`)**.
+5. **2:15 — Medication Schedule & Family Tree (`/schedule`, `/family`):** Check off a dose (`TickCross`), enable **Browser Dose Reminders**, then open **`/family`** to load **Sample Family (Demo Data)**, toggle `"Aaj poore khandaan ki dawaein"`, or export/print.
+6. **2:45 — Instant Emergency Escalation (`/emergency`):** From **any** screen, press **`Shift+E`** (or tap **`1122`** / dock **`7`**) or enter `"chest pain"` to verify instant zero-delay escalation (`tel:1122`, `tel:115`, caregiver location share, offline support).
 
-<details>
-<summary><b>Can it replace my doctor or pharmacist?</b></summary>
-No. It is an informational tool, not a medical device, and it is not clinically validated. Always confirm medicines and doses with a pharmacist or doctor.
-</details>
+---
 
-<details>
-<summary><b>What if the handwriting is unclear?</b></summary>
-Low-confidence or missing fields are highlighted and must be confirmed by you. The app never silently guesses a dose.
-</details>
+## Future Roadmap
 
-<details>
-<summary><b>Is my data stored?</b></summary>
-There is no server-side patient database. Uploads are processed in memory and not saved to disk. Local browser data can be deleted in one tap.
-</details>
-
-<details>
-<summary><b>What happens in an emergency?</b></summary>
-A deterministic rule engine, independent of the AI, immediately shows the emergency screen with Pakistan emergency numbers.
-</details>
-
-<details>
-<summary><b>Which languages are supported?</b></summary>
-Urdu script, Roman Urdu and English today. Punjabi, Sindhi, Pashto, Balochi and Saraiki are on the roadmap.
-</details>
-
-## 👨‍⚕️ Prescribed by
-
-| Name | Role | GitHub |
-|---|---|---|
-| **Abdullah Javid** | `YOUR_ROLE` | [@mabdullahab614-alt](https://github.com/mabdullahab614-alt) |
-| `TEAM_MEMBER_2` | `ROLE` | [@username](https://github.com/username) |
-| `TEAM_MEMBER_3` | `ROLE` | [@username](https://github.com/username) |
-
-**Event:** AI Hackathon & Startup Pitch, STCS, Minhaj University Lahore, 17 November 2026
-**Niche:** AI for Accessible Healthcare & Well-Being · **UN SDG 3**
-
-## 📜 License
-
-**All Rights Reserved © 2026 Abdullah Javid and team.** This repository is public for portfolio and demonstration only. No part may be copied, modified, distributed or used without prior written permission. Forking or cloning grants no rights.
-
-<img src="ecg.svg" width="100%" alt=""/>
-
-<div align="center">
-
-<a href="https://ai-hackathon-h4rh5ib5s-princearis11s-projects.vercel.app/">
-<img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=22&pause=1000&color=0F766E&center=true&vCenter=true&width=760&height=44&lines=Every+patient+deserves+to+understand+their+own+health.;Healthcare+in+the+language+you+speak+%F0%9F%92%9A;Star+%E2%AD%90+the+repo+if+this+helped+you." alt="Every patient deserves to understand their own health"/>
-</a>
-
-<br/>
-
-<a href="https://github.com/mabdullahab614-alt"><img src="https://img.shields.io/badge/GitHub-mabdullahab614--alt-181717?style=for-the-badge&logo=github" alt="GitHub profile"/></a>
-<a href="mailto:mabdullah.ab614@gmail.com"><img src="https://img.shields.io/badge/Email-mabdullah.ab614%40gmail.com-C2410C?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-<a href="https://www.linkedin.com/in/abdullah-javid-b217a2384/"><img src="https://img.shields.io/badge/LinkedIn-Abdullah%20Javid-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-
-<br/><br/>
-
-**⚠️ Medical disclaimer.** Sehat Saathi is informational and educational. It is not a medical device and provides no diagnosis or treatment.
-**In an emergency, call 1122 or go to the nearest hospital immediately.**
-
-<br/>
-
-<sub>Urdu health app · Urdu prescription reader · Roman Urdu medicine explanation · prescription OCR Pakistan · lab report explainer · medication adherence · medicine reminder Urdu · voice-first accessible healthcare AI · caregiver medicine tracker · SDG 3 hackathon project</sub>
-
-</div>
+- Regional Pakistani language expansion (Punjabi, Sindhi, Pashto, Balochi, Saraiki) with neural Urdu voice synthesis
+- Handwriting-specialized pharmacy verification workflows and pharmacist review handoff
+- Longitudinal chronic-care adherence trends with opt-in encrypted caregiver sync
+- Offline-friendly Progressive Web App (PWA) caching for low-connectivity clinics
+- Integration with verified national clinic/pharmacy registries and HL7/FHIR lab exports
