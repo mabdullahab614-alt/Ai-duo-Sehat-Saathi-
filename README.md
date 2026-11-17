@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://ai-hackathon-h4rh5ib5s-princearis11s-projects.vercel.app/">
-<img src="assets/banner.svg" width="100%" alt="Sehat Saathi (صحت ساتھی): Urdu-first AI prescription and lab report reader with voice, medicine schedule and emergency safety engine"/>
+<img src="banner.svg" width="100%" alt="Sehat Saathi (صحت ساتھی): Urdu-first AI prescription and lab report reader with voice, medicine schedule and emergency safety engine"/>
 </a>
 
 <h3>Urdu-first AI that reads your prescription and lab report, explains it in Urdu & Roman Urdu with voice, builds your daily medicine schedule, and overrides the AI with a safety engine when it matters.</h3>
@@ -41,7 +41,7 @@
 
 </div>
 
-<img src="assets/ecg.svg" width="100%" alt=""/>
+<img src="ecg.svg" width="100%" alt=""/>
 
 ```text
 ┌────────────────────────────────────────────────────────────────────┐
@@ -81,7 +81,7 @@
 
 </div>
 
-<img src="assets/ecg.svg" width="100%" alt=""/>
+<img src="ecg.svg" width="100%" alt=""/>
 
 ## 🩺 The Case
 
@@ -95,12 +95,12 @@
 
 **Low-literacy and Urdu-speaking patients cannot reliably understand prescriptions, lab reports and medical instructions.** That gap causes medication errors, missed doses, anxiety and delayed care. Sehat Saathi closes it.
 
-<img src="assets/ecg.svg" width="100%" alt=""/>
+<img src="ecg.svg" width="100%" alt=""/>
 
 ## 🧬 How It Works
 
 <div align="center">
-<img src="assets/pipeline.svg" width="100%" alt="Animated pipeline: scan, OCR, safety engine, structured extraction, human confirmation, then Urdu explanation, voice and schedule. The safety engine can jump straight to an emergency screen."/>
+<img src="pipeline.svg" width="100%" alt="Animated pipeline: scan, OCR, safety engine, structured extraction, human confirmation, then Urdu explanation, voice and schedule. The safety engine can jump straight to an emergency screen."/>
 </div>
 
 **Four design rules that make it trustworthy**
@@ -110,7 +110,7 @@
 3. **A human signs off.** Low-confidence or missing fields must be confirmed before anything is explained.
 4. **Nothing is invented.** Extraction is bound to the uploaded document.
 
-<img src="assets/ecg.svg" width="100%" alt=""/>
+<img src="ecg.svg" width="100%" alt=""/>
 
 ## ℞ The Prescription
 
@@ -192,7 +192,7 @@ Chest pain, severe breathing difficulty, fainting, severe allergic reaction, unc
 | **Accuracy Scorecard** | `/eval` | Live extraction results on 5 synthetic prescriptions |
 | **Judge, Aap Koshish Karein** | `/api/safety-challenge` | Try to break the emergency engine yourself |
 
-<img src="assets/ecg.svg" width="100%" alt=""/>
+<img src="ecg.svg" width="100%" alt=""/>
 
 ## 🏆 Why This Should Win
 
@@ -207,7 +207,7 @@ Chest pain, severe breathing difficulty, fainting, severe allergic reaction, unc
 | **💼 Business viability** | Clinics, pharmacies, telehealth, NGOs and an API, with a clear go-to-market |
 | **🌍 Impact** | Direct fit for **UN SDG 3: Good Health and Well-Being** |
 
-<img src="assets/ecg.svg" width="100%" alt=""/>
+<img src="ecg.svg" width="100%" alt=""/>
 
 ## 📸 Waiting Room
 
@@ -221,13 +221,13 @@ Chest pain, severe breathing difficulty, fainting, severe allergic reaction, unc
 |:---:|:---:|:---:|:---:|
 | `docs/schedule.png` | `docs/family.png` | `docs/emergency.png` | `docs/care.png` |
 
-<img src="assets/ecg.svg" width="100%" alt=""/>
+<img src="ecg.svg" width="100%" alt=""/>
 
 ## 📋 Sig: How to Use
 
 ```bash
-git clone https://github.com/mabdullahab614-alt/sehat-saathi.git
-cd sehat-saathi
+git clone https://github.com/mabdullahab614-alt/Ai-duo-Sehat-Saathi-.git
+cd Ai-duo-Sehat-Saathi-
 npm install
 cp .env.example .env.local      # set GEMINI_API_KEY=your_actual_key
 npm run dev                     # → http://localhost:3000
@@ -280,7 +280,7 @@ sehat-saathi/
 │   ├── ai/             ocr.ts · gemini.ts · prompts.ts · schemas.ts
 │   ├── safety/         redFlags.ts
 │   └── utils/          validate.ts
-├── assets/             banner.svg · ecg.svg · pipeline.svg
+├── banner.svg · ecg.svg · pipeline.svg
 ├── firestore.rules
 └── storage.rules
 ```
@@ -289,7 +289,7 @@ sehat-saathi/
 
 </details>
 
-<img src="assets/ecg.svg" width="100%" alt=""/>
+<img src="ecg.svg" width="100%" alt=""/>
 
 ## ⚠️ Contraindications
 
@@ -324,7 +324,7 @@ Every explanation and safety screen carries this notice:
 | **Firebase** *(optional)* | Auth, Firestore, Storage with consent-gated rules |
 | **lucide-react** | Icons |
 
-<img src="assets/ecg.svg" width="100%" alt=""/>
+<img src="ecg.svg" width="100%" alt=""/>
 
 ## 🎬 3-Minute Demo
 
@@ -366,7 +366,7 @@ Optional emulator seed: `FIRESTORE_EMULATOR_HOST=127.0.0.1:8080 node scripts/see
 - [ ] Verified clinic / pharmacy registries and HL7/FHIR lab exports
 - [ ] Pilot with a partner clinic or pharmacy
 
-<img src="assets/ecg.svg" width="100%" alt=""/>
+<img src="ecg.svg" width="100%" alt=""/>
 
 ## ❓ FAQ
 
@@ -415,7 +415,7 @@ Urdu script, Roman Urdu and English today. Punjabi, Sindhi, Pashto, Balochi and 
 
 **All Rights Reserved © 2026 Abdullah Javid and team.** This repository is public for portfolio and demonstration only. No part may be copied, modified, distributed or used without prior written permission. Forking or cloning grants no rights.
 
-<img src="assets/ecg.svg" width="100%" alt=""/>
+<img src="ecg.svg" width="100%" alt=""/>
 
 <div align="center">
 
